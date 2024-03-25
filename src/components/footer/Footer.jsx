@@ -22,7 +22,7 @@ function Footer() {
       </div>
       <div className={style.logoFooter}>
         <img src={Logo} alt="Logo" />
-        <span>©RojasCAD Todos los derechos reservados 2024</span>
+        <span className={style.logoFooteSpan}>©RojasCAD Todos los derechos reservados 2024</span>
       </div>
     </div>
   )
