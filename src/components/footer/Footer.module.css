@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(151, 149, 149);
+    margin-top: 50px;
+    border-top: 2px solid gray;
+    color: rgb(18, 18, 18);
+    height: 100px;
+}
+
+.container svg {
+    font-size: 36px; /* Cambia el tamaño de los iconos según tu preferencia */
+}
