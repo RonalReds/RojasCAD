@@ -7,9 +7,46 @@
     margin-top: 50px;
     border-top: 2px solid gray;
     color: rgb(18, 18, 18);
-    height: 100px;
-}
+    height: 300px;
+  }
 
-.container svg {
-    font-size: 36px; /* Cambia el tamaño de los iconos según tu preferencia */
-}
+  .iconContainer1{
+    margin-left: 30%;
+  }
+
+
+
+  .iconContainer1,
+  .iconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+    margin-bottom: 10px; /* Espacio entre cada icono y su texto */
+  }
+
+  
+  
+  .icons {
+    font-size: 30px;
+  }
+  
+  .container img {
+    width: 2%;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+    }
+    .iconContainer {
+      margin-right: 20px; /* Espacio entre cada iconContainer */
+    }
+
+    .logoFooter{
+        left: 0%;
+        top: 100px;
+    position: relative;
+    }
+  }
+  
