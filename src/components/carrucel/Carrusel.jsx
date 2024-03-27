@@ -55,7 +55,7 @@ function Carrusel() {
         autoPlay={true}
         showThumbnails={true}
           thumbnailPosition='bottom'
-          slideInterval={4000}
+          slideInterval={3000}
           slideDuration={1000}
       />
       </div>

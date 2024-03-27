@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './Home.module.css';
-import Inicial from '../inicial-video/Inicial';
+import Inicial from '../inicio-nav/Inicial';
 import Nav from '../nav/Nav';
 import Carrusel from '../carrucel/Carrusel';
 import Tools from '../tools/Tools';

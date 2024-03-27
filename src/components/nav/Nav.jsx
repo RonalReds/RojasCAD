@@ -13,18 +13,19 @@ function Nav() {
 
   return (
     <div className={style.navContainer}>
+      <Link to={'/'} className={style.linck}>
       <h4
         className={selectedButton === 'Registrarse' ? style.selected : ''}
-        onMouseEnter={() => handleMouseEnter('Registrarse')}>Registrarse</h4>
+        onMouseEnter={() => handleMouseEnter('Registrarse')}>Inicio</h4>
+      </Link>
+      
       <h4
         className={selectedButton === 'Servicios' ? style.selected : ''}
-        onMouseEnter={() => handleMouseEnter('Servicios')}>Servicios</h4>
-      <h4
-        className={selectedButton === 'Cursos' ? style.selected : ''}
+        onMouseEnter={() => handleMouseEnter('Servicios')}>Registrarse</h4>
+      <Link to={'/cursos'} className={style.linck}>
+        <h4 className={selectedButton === 'Cursos' ? style.selected : ''}
         onMouseEnter={() => handleMouseEnter('Cursos')}>Cursos</h4>
-      <h4
-        className={selectedButton === 'Planes' ? style.selected : ''}
-        onMouseEnter={() => handleMouseEnter('Planes')}>Planes</h4>
+      </Link>
       <Link to={'/contact'} className={style.linck}>
         <h4 className={selectedButton === 'Contactos' ? style.selected : ''}
         onMouseEnter={() => handleMouseEnter('Contactos')}>Contactos</h4>

@@ -108,12 +108,12 @@ function Contact() {
             {errors.user_name && <p className={style.msjP}>{errors.user_name}</p>}
             <input type="email" placeholder='Correo electrónico' name='user_email' value={messageMail.user_email} onChange={handleChange} />
             {errors.user_email && <p className={style.msjP}>{errors.user_email}</p>}
-            <textarea type="text" placeholder='Mensaje...' name='message' value=    {messageMail.message} onChange={handleChange} />
+            <textarea type="text" placeholder='Tienes alguna pregunta?' name='message' value=    {messageMail.message} onChange={handleChange} />
             {errors.message && <p className={style.msjP}>{errors.message}</p>}
         <button>Enviar</button>
-        <Link to={'/'} className={style.linck}>
+       {/*  <Link to={'/'} className={style.linck}>
           <span>{"< <"} Atras</span>            
-        </Link>
+        </Link> */}
     </form>
   </div>
   )
