@@ -18,37 +18,37 @@ function Brand() {
     const images = [
         {
           original: AGS,
-          thumbnail: ASSTEC,
+          //thumbnail: ASSTEC,
           originalWidth: 1000, // Ancho deseado para la imagen original.
           originalHeight: 300, // Alto deseado para la imagen original.
         },
         {
           original: BALD,
-          thumbnail: BALD,
+          //thumbnail: BALD,
           originalWidth: 1000, // Ancho deseado para la imagen original.
           originalHeight: 300, // Alto deseado para la imagen original.
         },
         {
           original: CICOLD,
-          thumbnail: CICOLD,
+          //thumbnail: CICOLD,
           originalWidth: 1000, // Ancho deseado para la imagen original.
           originalHeight: 300, // Alto deseado para la imagen original.
         },
         {
           original: CODYMARC,
-          thumbnail: CODYMARC,
+          //thumbnail: CODYMARC,
           originalWidth: 1000, // Ancho deseado para la imagen original.
           originalHeight: 300, // Alto deseado para la imagen original.
         },
         {
           original: KSB,
-          thumbnail: KSB,
+          //thumbnail: KSB,
           originalWidth: 1000, // Ancho deseado para la imagen original.
           originalHeight: 300, // Alto deseado para la imagen original.
         },
         {
             original: SEALED,
-            thumbnail: SEALED,
+            //thumbnail: SEALED,
             originalWidth: 1000, // Ancho deseado para la imagen original.
             originalHeight: 300, // Alto deseado para la imagen original.
             }

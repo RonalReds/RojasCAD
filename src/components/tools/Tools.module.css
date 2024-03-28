@@ -26,6 +26,7 @@
 }
 
 .container .divMap h2{
+    color: rgb(192, 13, 13);
     padding-top: 15px;
     text-align: center;
     margin-bottom: 10px;
@@ -46,9 +47,11 @@
 
 /* .container .divMap h2, */
 .container .divMap p {
+    font-family: "Blinker", sans-serif;
     opacity: 0; /* Ocultar inicialmente */
     transform: translateY(20px); /* Mover hacia abajo */
     transition: opacity 0.3s, transform 0.3s; /* Agregar una transición suave */
+    font-size: 20px;
 }
 /* .container .divMap:hover h2, */
 .container .divMap:hover p {

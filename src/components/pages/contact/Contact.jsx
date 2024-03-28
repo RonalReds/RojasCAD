@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import style from './Contact.module.css';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
-import { IoChevronBackOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
+
 
 function Contact() {
 
@@ -13,7 +12,9 @@ function Contact() {
         message: ''
       })
     
-      const [errors, setErrors] = useState({});
+    const [errors, setErrors] = useState({});
+  
+    const form = useRef(null);
     
     
       const validation = (messageMail) => {
@@ -96,24 +97,23 @@ function Contact() {
       });
     
       
-    };
+  };
+  
+  const errorMsj = errors;
 
   return (
-    <div className={style.container}>
+    <div className={errorMsj ? style.container : ''}>
         <h3>Contacto</h3>
           <p>//Envíame un mensaje o un correo electrónico.</p>
          
-        <form onSubmit={sendEmail} >
+        <form onSubmit={sendEmail} ref={form}>
             <input type="text" placeholder='Nombre' name='user_name' value={messageMail.user_name} onChange={handleChange} />
-            {errors.user_name && <p className={style.msjP}>{errors.user_name}</p>}
+            <p className={style.msjP}>{errors.user_name ? errors.user_name : ''}</p>
             <input type="email" placeholder='Correo electrónico' name='user_email' value={messageMail.user_email} onChange={handleChange} />
-            {errors.user_email && <p className={style.msjP}>{errors.user_email}</p>}
+           {/*  {errors.user_email && <p className={style.msjP}>{errors.user_email}</p>} */}
             <textarea type="text" placeholder='Tienes alguna pregunta?' name='message' value=    {messageMail.message} onChange={handleChange} />
-            {errors.message && <p className={style.msjP}>{errors.message}</p>}
-        <button>Enviar</button>
-       {/*  <Link to={'/'} className={style.linck}>
-          <span>{"< <"} Atras</span>            
-        </Link> */}
+            {/* {errors.message && <p className={style.msjP}>{errors.message}</p>} */}
+            <button>Enviar</button>
     </form>
   </div>
   )
