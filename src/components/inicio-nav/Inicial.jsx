@@ -7,7 +7,7 @@ import PortadaHOME001 from '../../assets/image/PortadaHOME001.jpg';
 
 function Inicial() {
 
-  const textIni = '¡SOLUCIONES EN DISEÑO CAD!'
+  const textIni = 'SOLUCIONES EN DISEÑO CAD'
   /* const [index, setIndex] = useState(0);
   const [back, setBack] = useState(false); */
 

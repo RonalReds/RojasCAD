@@ -9,7 +9,7 @@
 
 .divMap {
     width: 400px;
-    height: 530px;
+    height: 550px;
     /* background-color: rgb(234, 236, 236); */
     margin-right:40px;
     padding: 10px;
@@ -52,6 +52,7 @@
     transform: translateY(20px); /* Mover hacia abajo */
     transition: opacity 0.3s, transform 0.3s; /* Agregar una transición suave */
     font-size: 20px;
+    margin-left: 5px;
 }
 /* .container .divMap:hover h2, */
 .container .divMap:hover p {
